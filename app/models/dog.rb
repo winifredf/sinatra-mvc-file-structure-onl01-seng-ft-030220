@@ -7,7 +7,7 @@ class Dog
     @name = name
     @breed = breed
     @age = age
-    @@all << self
+    self.class.all << self
   
   end
 end  
