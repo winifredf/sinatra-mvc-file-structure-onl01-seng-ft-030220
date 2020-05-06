@@ -1,6 +1,10 @@
-class Dog < Sinatra::Base
+class Dog
+  attr_accessor :name :breed :age
   
-  get '/dogs' do
-    
+  def initialize(name, breed, age)
+    @name = name
+    @breed = breed
+    @age = age
+  
   end
 end  
